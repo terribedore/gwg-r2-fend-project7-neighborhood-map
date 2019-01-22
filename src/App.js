@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Map from './component/Map.js';
+import Map from './components/Map.js';
 
 class App extends Component {
   render() {
