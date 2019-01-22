@@ -5,6 +5,11 @@ Special Thanks to my mentor and spouse, [Eric Andersen](github.com/chiveturkey) 
 
 This map will help you find FREE places to go and have an awesomely frugal date in the San Antonio area!
 
+USED:
+Google Map API
+Reactjs
+Foursquare Library for React [Found At](https://developer.foursquare.com/docs/api/libraries)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
