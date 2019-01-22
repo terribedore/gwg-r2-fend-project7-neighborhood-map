@@ -1,6 +1,11 @@
 # gwg-r2-fend-project7-neighborhood-map
 Neighborhood Map - Capstone Project for Udacity's Frontend Web Dev Nanodegree
 
+Special Thanks to my mentor and spouse, [Eric Andersen](github.com/chiveturkey) and to the inestimable Forrest Walker for his Youtube Walkthrough on integrating a non-google api (aka Four Square).
+
+This map will help you find FREE places to go and have an awesomely frugal date in the San Antonio area!
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
