@@ -8,7 +8,7 @@ Foursquare API. Coffee Shops. (MAYBE insert filter to omit all Starbucks). Boom.
 2019/01/19
 I am going to look at a select group of places called "free date ideas" in the San Antonio, TX area. This allows me to /\[fairly] easily reuse Lessons 7 and 8 from Part 5 by converting it into a react app.
 
-My intitial thoughts are to use the html doc from the 'getting started with APIs' lesson and parse them into an app using React.
+My intitial thoughts are to use the html doc from the 'getting started with APIs' lesson and parse the functions into components then an app using React.
 
 To give more details, I also need to pull in another non-google api/library. Would love to use wikipedia since we actually donate there regularly.
 

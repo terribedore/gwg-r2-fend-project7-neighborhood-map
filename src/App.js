@@ -1,53 +1,27 @@
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
-import './App.css'
-import Map from './components/Map.js'
+import React, { Component } from 'react';
+import { Map, GoogleApiWrapper } from 'google-maps-react';
 
-
-
-var foursquare = require('react-foursquare')({
-  clientID: 'G04GDHOHNV44SCN05HBQDM0TACJMTYVR13OWDX4NJ3N3JUWL',
-  clientSecret: 'KE10VXIQUO1L2FFLOKYWDHTZOKNU23RFRFNXEMYMX1E31QM4'
-});
-
-var params = {
-  "ll": "29.424349, -98.491142",
-  "query": '',
-  "limit": 10
+const mapStyles = {
+  width: '100%',
+  height: '100%'
 };
 
-export default class FoursquareDemo extends Component {
-
-  constructor(props) {
-     super(props);
-     this.state = {
-       items: []
-     };
-   }
-
-  componentDidMount() {
-    foursquare.venues.getVenues(params)
-      .then(res=> {
-        this.setState({ items: res.response.venues });
-      });
-  }
-
+export class MapContainer extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-        <h1 className="App-title">Independent Coffeehouses</h1>
-        <h5 className="App-desc">(Coffee that isn't Starbucks!)</h5>
-        </header>
-        <Map/>
-            <div>Items:</div>
-            { this.state.items.map(item=> { return <div key={item.id}>{item.name}</div>}) }
-      </div>
-  )
+      <Map
+        google={this.props.google}
+        zoom={14}
+        style={mapStyles}
+        initialCenter={{
+         lat: -1.2884,
+         lng: 36.8233
+        }}
+      />
+    );
   }
 }
 
-ReactDOM.render(
-  <FoursquareDemo />,
-  document.getElementById('root')
-);
+export default GoogleApiWrapper({
+  apiKey: 'AIzaSyB2zYe9o94C1ECzcD8Kv7gQEKhAaDHuwo0'
+})(MapContainer);
