@@ -1,3 +1,10 @@
+REMINDER: Place new entries at the TOP of this doc!
+
+201901/23
+Right so I am (as usual) making this more difficult than it needs to be.
+Foursquare API. Coffee Shops. Boom. Graduate (I hope!)
+
+2019/01/19
 I am going to look at a select group of places called "free date ideas" in the San Antonio, TX area. This allows me to /\[fairly] easily reuse Lessons 7 and 8 from Part 5 by converting it into a react app.
 
 My intitial thoughts are to use the html doc from the 'getting started with APIs' lesson and parse them into an app using React.
@@ -21,13 +28,11 @@ Folder: Main
   Folder: public
   Folder: src (source)
     index.js
-    styles.css
-    registerServiceWorker.js
-    Folder: data
-
+    index.css
+    app.js (one ring to rule them all)
+    app.css
+    ServiceWorker.js
     Folder: components (all the pieces from P05.L07.M13 separated)
-      app.js (one ring to rule them all)
       features.js (??)
-      locations.json (list of all my locations)
-      leMap.js (actual map init)
+      Map.js (actual map init)
 
