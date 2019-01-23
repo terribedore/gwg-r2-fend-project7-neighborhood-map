@@ -36,8 +36,8 @@ export default class FoursquareDemo extends Component {
     return (
       <div className="App">
         <header className="App-header">
-        <h1 className="App-title">Frugal Date Ideas</h1>
-        <h5 className="App-desc">Free or Cheap Places to be with Your Honey.</h5>
+        <h1 className="App-title">Independent Coffeehouses</h1>
+        <h5 className="App-desc">(Coffee that isn't Starbucks!)</h5>
         </header>
         <Map/>
             <div>Items:</div>
