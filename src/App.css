@@ -1,3 +1,21 @@
+h1 {
+  display: block;
+  font-size: 2em;
+  margin: 0.67em 0 0 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h5 {
+  display: block;
+  font-size: 0.83em;
+  margin: 0 0 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 .App {
   text-align: center;
 }
