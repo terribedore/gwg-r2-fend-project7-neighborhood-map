@@ -12,10 +12,12 @@ var foursquare = require('react-foursquare')({
 })
 
 var params = {
-  "ll": "29.424349,-98.491142",
-  "query": 'coffee',
-  "near": '',
-  "limit": 10 // TODO: find a way to limit this by DISTANCE
+  "near": "San Antonio",
+  "radius": "1000",
+  "intent": "browse",
+  "categoryId": "4bf58dd8d48988d1e0931735",
+  "query": "Starbucks",
+  "limit": 10
 }
 
 class App extends Component {
