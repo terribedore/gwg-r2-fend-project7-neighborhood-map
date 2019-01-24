@@ -24,14 +24,15 @@ class App extends Component {
   constructor(props) {
    super(props)
    this.state = {
-     items: []
+     items: [],
+     markers: []
    }
  }
 
   componentDidMount() {
     foursquare.venues.getVenues(params)
-      .then(res=> {
-        this.setState({ items: res.response.venues });
+      .then(result=> {
+        this.setState({ items: result.response.venues });
       })
   }
 
